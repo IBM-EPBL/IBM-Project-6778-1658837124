@@ -5,10 +5,11 @@ TECHNOLOGY : Cloud <br>
 TEAM ID : 
 
 ## 👨‍👩‍👦TEAM MEMBERS
--Rahul kumar S
--Shaama M
--Venkata Gunasekhar V
--Vinay Krishna K N
+- Rahul kumar S
+- Shaama M
+- Venkata Gunasekhar V
+- Vinay Krishna K N
+
 
 ## 📒PROJECT DESCRIPTION:
 <br>
