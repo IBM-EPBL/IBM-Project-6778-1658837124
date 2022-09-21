@@ -1,4 +1,3 @@
-## 
-V Venkata Gunasekhar
-Team Member-2
+## Venkata Gunasekhar V
+## Team Member-2
 
