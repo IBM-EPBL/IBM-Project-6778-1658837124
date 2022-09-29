@@ -1,0 +1,26 @@
+to create---
+python -m venv .venv  
+
+to activate environment---
+.venv\scripts\activate  
+
+to install libraries---
+pip install flask flask-sqlalchemy flask-login
+
+to go into project file-----
+cd project    
+
+to set variables in conda----
+    > set FLASK_APP=__helinit__.py
+    > set FLASK_DEBUG=True
+    > set FLASK_ENV=development
+    > flask run
+
+to run flask----
+python -m flask --app __init__ --debug run
+
+install libraries---
+pip install -r requirements.txt
+
+to run flask---
+python -m flask run 
