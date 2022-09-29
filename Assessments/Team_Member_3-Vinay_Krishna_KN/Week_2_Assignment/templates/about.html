@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>About</title>
+        <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Island+Moments&display=swap" rel="stylesheet">
+        <h1 align="center"> Personal Expense Tracker</h1> 
+        <style>
+            body{
+                background-image: url("about.png");
+                height: 100%;
+                font-size: 30px;
+            }
+            h2{
+                font-family: 'Imperial Script', cursive;
+                font-family: 'Island Moments', cursive;
+            }
+        </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+            <div class="navbar">
+                <div class="menu">
+                    <h1><ul>
+                        <li><a href="{{url_for('home')}}">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="login">Login/Register</a></li>
+                    </ul>
+                </h1>
+                </div>
+            </div>
+            
+        </div>
+    </head>
+
+    <body style="background-color:aquamarine">
+        <p><center>In simple words, personal finance entails all the financial decisions and activities that a Finance app makes your life easier by helping you to manage your finances efficiently. A personal finance app will not only help you with budgeting and accounting but also give you helpful insights about money management.</center></p>
+        <p><center>Personal finance applications will ask users to add their expenses and based on their expenses wallet balance will be updated which will be visible to the user. Also, users can get an analysis of their expenditure in graphical forms.</center></p>
+    </body>
+</html>
