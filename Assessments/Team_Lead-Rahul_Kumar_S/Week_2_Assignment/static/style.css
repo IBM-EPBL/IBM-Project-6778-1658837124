@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main{
+    width:100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('bg.png');
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.navbar{
+    width:1200px;
+    height:75px;
+    margin:auto;
+}
+.icon{
+    width: 200px;
+    float:left;
+    height:70px;
+}
+.menu{
+    width: 1200px;
+    float:left;
+    height: 70px;
+}
+ul{
+    width: 1200px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    width:70px;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: brown;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+.content .par{
+    padding-right: 20px;
+    padding-bottom: 25px;
+    font-family: arial;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-right: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px; 
+}
+div.container{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    font-family: 'Imperial Script', cursive;
+}
+.container .row{
+    margin-top: 70px;
+}
