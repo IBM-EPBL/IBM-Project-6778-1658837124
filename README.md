@@ -29,6 +29,4 @@ Personal Expense Tracker Web App
 IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docker,IBM DB2,IBM Container Registry
 
 ## 🖇️WORK LINKS
-<a href="#"> Empathy map</a> <br>
-<a href="#"> Literature survey</a> <br>
-<a href="#"> Assignmnet </a>
+<a href="https://github.com/IBM-EPBL/IBM-Project-6778-1658837124/tree/main/Project_Design_and_Planning"> Project Design and Planning</a> <br>
