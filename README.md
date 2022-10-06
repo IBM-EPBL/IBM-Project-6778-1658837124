@@ -19,6 +19,7 @@ Personal finance applications will ask users to add their expenses and based on 
 <br>
 
 ## 📖Goal:
+Personal Expense Web App
 
 
 ## 👨‍💻Technical Architecture:
