@@ -19,14 +19,19 @@ Personal finance applications will ask users to add their expenses and based on 
 <br>
 
 ## 📖Goal:
-Personal Expense Tracker Web App
+Personal Expense Tracker Web Application
 
 
 ## 👨‍💻Technical Architecture:
 ![image](https://user-images.githubusercontent.com/113816385/194369527-8b502677-b269-4120-a914-d16312d1bab1.png)
 
 ## Skills Required:
-IBM Cloud,HTML,Javascript,IBM Cloud Object Storage,Python-Flask,Kubernetes,Docker,IBM DB2,IBM Container Registry
+- HTML, CSS, Javascript
+- Python-Flask
+- IBM Cloud, IBM Cloud Object Storage, IBM Container Registry, IBM DB2
+- Kubernetes
+- Docker
+
 
 ## 🖇️WORK LINKS
 <a href="https://github.com/IBM-EPBL/IBM-Project-6778-1658837124/tree/main/Project_Design_and_Planning"> Project Design and Planning</a> <br>
