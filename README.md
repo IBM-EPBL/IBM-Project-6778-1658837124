@@ -26,11 +26,11 @@ Personal Expense Tracker Web App
 ![image](https://user-images.githubusercontent.com/113816385/194369527-8b502677-b269-4120-a914-d16312d1bab1.png)
 
 ## Skills Required:
--HTML, CSS, Javascript
--Python-Flask
--IBM Cloud, IBM Cloud Object Storage, IBM Container Registry, IBM DB2
--Kubernetes
--Docker
+- HTML, CSS, Javascript
+- Python-Flask
+- IBM Cloud, IBM Cloud Object Storage, IBM Container Registry, IBM DB2
+- Kubernetes
+- Docker
 
 
 ## 🖇️WORK LINKS
