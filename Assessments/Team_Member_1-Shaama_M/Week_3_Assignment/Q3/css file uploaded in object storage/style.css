@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+  }
+
+.border1{
+    border:10px outset rgb(55, 121, 134);
+}
+
+.border2{
+    border:5px groove gold;
+}
+
+body {
+    background-color: coral;
+}
+
+.bgcolor{
+    background-color:powderblue;
+}
+
+.align1{
+    text-align: left;
+}
+
+.align2{
+    text-align: center;
+}
+
+.align3{
+    text-align: right;
+}
