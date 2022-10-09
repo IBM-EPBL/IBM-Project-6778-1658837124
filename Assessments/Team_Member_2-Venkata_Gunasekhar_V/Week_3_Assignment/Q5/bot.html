@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><head>
+  <style>
+  h1 {text-align: center;}
+  h2 {text-align: center;}
+  p {text-align: center;}
+  </style>
+  </head>
+  <body>
+  
+  <h1>Hospital Chat Bot</h1>
+  <p><h2>This is a chat bot assistant</h2></p>
+      <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "f252a4f2-6574-4b40-acea-8cf5ce89a4ca", // The ID of this integration.
+          region: "eu-gb", // The region your integration is hosted in.
+          serviceInstanceID: "8b12dcbf-9125-48d0-a240-f36bfeae58e3", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    </body>
+</html>
