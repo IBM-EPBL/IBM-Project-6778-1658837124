@@ -1,0 +1,3 @@
+//HOSPITAL ASSITANT LINK
+
+https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Feu-gb.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-3b7fb3cb-7268-48b8-9438-6abfd8147fc9%3A%3A0f67546f-0068-40cf-b91d-888859901a99&integrationID=4b3dd6c0-d9b7-4fcc-9f4a-74d2d2a89979&region=eu-gb&serviceInstanceID=3b7fb3cb-7268-48b8-9438-6abfd8147fc9
