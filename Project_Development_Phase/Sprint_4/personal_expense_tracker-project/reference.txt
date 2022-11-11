@@ -1,0 +1,25 @@
+to create environment---
+python -m venv .venv  
+
+to activate environment---
+.venv\scripts\activate  
+
+to install libraries---
+pip install -r requirements.txt
+
+to go into project file-----
+cd project    
+
+to set variables in conda----
+    > set FLASK_APP=__init__.py
+    > set FLASK_DEBUG=True
+    > set FLASK_ENV=development
+    > flask run
+
+to run flask----
+python -m flask run
+python -m flask --debug run 
+
+
+to freeze----
+pip freeze > requirements.txt

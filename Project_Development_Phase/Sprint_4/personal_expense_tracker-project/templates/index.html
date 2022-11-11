@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Index {% endblock %}
+{% block link %} {% endblock %}
+{% block content %}
+
+{% if not current_user.is_authenticated %}
+<div class="container has-text-centered">
+  <h1 class="title">
+    Flask Personal Expense Tracker
+  </h1>
+  <h2 class="subtitle">
+    Welcome to our app!!.
+  </h2>
+  </div>
+{% else %}
+<h1>your details...</h1>
+{% endif %}
+
+{% endblock %}
