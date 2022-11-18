@@ -34,4 +34,12 @@ Personal Expense Tracker Web Application
 
 
 ## 🖇️WORK LINKS
+<a href="https://github.com/IBM-EPBL/IBM-Project-6778-1658837124/tree/main/Assessments"> Assessments</a> <br>
 <a href="https://github.com/IBM-EPBL/IBM-Project-6778-1658837124/tree/main/Project_Design_and_Planning"> Project Design and Planning</a> <br>
+<a href="https://github.com/IBM-EPBL/IBM-Project-6778-1658837124/tree/main/Project_Development_Phase"> Project Development Phase</a> <br>
+<a href="https://github.com/IBM-EPBL/IBM-Project-6778-1658837124/tree/main/Final_Deliverables"> Project Development Phase</a> <br>
+
+## 🖇️Demo LINKS
+
+## <a href="https://drive.google.com/drive/folders/1budcrx64bGZg8CsZnVQXvAJONOtYXvlV?usp=share_link"> Demo Video</a> <br>
+## <a href="http://169.51.203.77:30948/"> Demo Website</a> <br>
