@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Expense page {% endblock %}
+{% block link %} <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">{% endblock %}
+{% block content %}
+
+{% if not current_user.is_authenticated %}
+<div class="container has-text-centered">
+  <h1 class="title">
+    Flask Personal Expense Tracker
+  </h1>
+  <h2 class="subtitle">
+    Welcome to our app!!.
+  </h2>
+  </div>
+{% else %}
+<section class="jumbotron text-center">
+  <div class="container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <p class="lead text-muted">Hello<b> {{name}}</b></p>
+        <p class="lead text-muted">Here is your expenses</p>
+        <p>
+          <a href="{{ url_for('add')}} " class="btn btn-primary my-2">Add new expense</a>
+        </p>
+        <h1 class="jumbotron-heading">Your Expenses</h1>
+      </div>
+    </div>  
+  </div>
+</section>
+
+<main>
+    {% if expenses%}
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        {% for expense in expenses %}
+        <div class="container d-flex justify-content-center">
+          <div class="row justify-content-center">
+        <div class="card border-success mb-3" style="margin: 1rem; min-width: 18rem;">
+          <div class="card-header">{{expense[3]}}</div>
+          <div class="card-body">
+            <h5 class="card-title">{{expense[2]}} </h5>
+            <p class="card-text">{{"₹{:,.2f}".format(expense[4])}}</p>
+            <p class="card-text"><small class="text-muted">{{expense[5]}}</small>
+            </p>
+            <a href="{{ url_for('update', expense_id=expense[0]) }}" class="btn btn-primary btn-sm m-1">Edit</a>
+            <a href="{{ url_for('delete', expense_id=expense[0]) }}" class="btn btn-danger btn-sm m-1">Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+        {% endfor%}
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    {% else %}
+            <section class="jumbotron text-center">
+                <h5>
+                        No expenses Found<br>
+                        <a href="{{ url_for('add')}} " >Click Here</a>
+                        <small class="text-muted">to add New expenses</small>
+                    
+                </h5>  
+            
+            </section>
+    {%endif%}
+</main>
+
+{% endif %}
+
+{% endblock %}

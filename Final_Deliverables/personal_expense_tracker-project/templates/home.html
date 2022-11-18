@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block title %}Home {% endblock %}
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+{% block content %}
+{% if not current_user.is_authenticated %}
+<div class="container has-text-centered">
+  <h1 class="title">
+    Flask Personal Expense Tracker
+  </h1>
+  <h2 class="subtitle">
+    Welcome to our app!!.
+  </h2>
+  </div>
+{% else %}
+<section class="jumbotron text-center">
+  <div class="container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="jumbotron-heading">Expense Tracking app</h1>
+        <p class="lead text-muted">A cool Expense Tracking app. Put your money under control!</p>
+        <p class="lead text-muted">Welcome<b> {{name}}</b></p>
+        <p class="lead text-muted">Here is the track of your expense</p>
+        <p>
+          <a href="{{ url_for('view')}} " class="btn btn-primary my-2">View Expenses</a>
+        
+          <a href="{{ url_for('add')}} " class="btn btn-primary my-2">Add new expense</a>
+        </p>
+      </div>
+    </div>  
+  </div>
+</section>
+</br>
+
+<main>
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <div class="container d-flex justify-content-center">
+          <div class="row justify-content-center">
+            <div class="card border-success mb-3" style="margin: 1rem; min-width: 18rem;">
+              <div class="card-header">Total Expense</div>
+              <div class="card-body">
+                <h5 class="card-title">{{"₹{:,.2f}".format(totalExpense)}}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex justify-content-center">
+          <div class="row justify-content-center">
+            <div class="card border-success mb-3" style="margin: 1rem; min-width: 18rem;">
+              <div class="card-header">Count of Expenses</div>
+              <div class="card-body">
+                <h5 class="card-title">{{totalItems}}</h5>
+                <a href="{{ url_for('view')}} " class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container d-flex justify-content-center">
+          <div class="row justify-content-center">
+            <div class="card border-success mb-3" style="margin: 1rem; min-width: 18rem;">
+              <div class="card-header">Total Expense for {{current_month}}</div>
+              <div class="card-body">
+                <h5 class="card-title">{{"₹{:,.2f}".format(totalExpenseNow)}}</h5>
+                <!--<p class="card-text">for {{current_month}}</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex justify-content-center">
+          <div class="row justify-content-center">
+            <div class="card border-success mb-3" style="margin: 1rem; min-width: 18rem;">
+              <div class="card-header">Total Budget for {{current_month}}</div>
+              <div class="card-body">
+                <h5 class="card-title">{{"₹{:,.2f}".format(totalBudgetNow)}}</h5>
+                <!--<p class="card-text">for {{current_month}}</p>-->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Edit
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Total Budget</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <form method="POST">
+                      <div class="modal-body">
+                        Enter Budget amount<div class="form-floating">
+                          <input type="number" id="budget" name="budget" class="form-control" placeholder="Budget Amount">
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                      </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+{% endif %}
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %}Index {% endblock %}
+{% block link %} <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">{% endblock %}
+{% block content %}
+
+{% if not current_user.is_authenticated %}
+<div class="container has-text-centered">
+  <h1 class="title">
+    Flask Personal Expense Tracker
+  </h1>
+  <h2 class="subtitle">
+    Welcome to our app!!.
+  </h2>
+  </div>
+{% else %}
+
+  <!-- jumbotron -->
+  <section class="jumbotron text-center">
+    <div class="container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="jumbotron-heading">Dashboard</h1>
+          <h2 class="jumbotron-heading">Your Detail's</h2>
+        </br>
+          <h5   class="jumbotron-heading">Your Name: {{details[3]}}</h5>
+          </br>
+          <h5   class="jumbotron-heading">Your mail id: {{details[1]}}</h5>
+          </br>
+          <h5   class="jumbotron-heading">Your mobile: {{details[5]}}</h5>
+          </br>
+          <h5   class="jumbotron-heading">Your gender: {{details[6]}}</h5>
+          </br>
+          <h5   class="jumbotron-heading">Your address: {{details[7]}}</h5>
+          </br>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Edit      
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Dashboard</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form method="POST">
+                <div class="modal-body">
+                  Enter Mobile Number<div class="form-floating">
+                    <input type="tel" id="number" name="number" class="form-control" pattern="[7-9]{1}[0-9]{9}" placeholder="Mobile number" required>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  Select your Gender<div class="form-floating">
+                    <select class="form-select" id="gender" name="gender" class="form-control">
+                      <option selected>Select Gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  Enter your Address<div class="form-floating">
+                    <input type="text" id="address" name="address" class="form-control" placeholder="Enter Address" required>
+                  </div>
+                </div>
+                <div class="modal-footer">
+
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  
+                  <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>  
+    </div>
+  </section>
+</br>
+{% endif %}
+
+{% endblock %}
